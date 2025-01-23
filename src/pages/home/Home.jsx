@@ -3,7 +3,9 @@ import logements from '../../../data/data.json'
 const Home = () => {
 
   return (
-    <div>Home</div>
+    <main className='container'>
+      
+    </main>
   )
 }
 
