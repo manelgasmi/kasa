@@ -1,8 +1,12 @@
 import React from 'react'
+import Banner from '../../components/banner/Banner'
+import bgImage from '../../assets/bg2.png';
 
 const AboutUS = () => {
   return (
-    <div>AboutUS</div>
+    
+    <div><Banner title= "" bgImage={bgImage}/></div>
+  
   )
 }
 
