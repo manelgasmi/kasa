@@ -1,0 +1,44 @@
+.collapseContent {
+  margin-top: 20px;
+  color: white;
+}
+
+.collapse {
+  background-color: #ff6060;
+  border-radius: 5px;
+  padding: 10px 20px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textClose {
+  height: 0;
+  overflow: hidden;
+  color: black;
+  transition: 0.5s;
+  text-align: start;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.textOpen {
+  color: black;
+  transition: 0.5s;
+  text-align: start;
+  background-color: #F6F6F673;
+  margin: 0;
+  padding: 10px;
+}
+
+.rotateBottom {
+  transform: rotate(-180deg);
+  transition: 0.5s;
+}
+
+.rotateTop {
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
