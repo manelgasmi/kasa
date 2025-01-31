@@ -1,15 +1,31 @@
-import React from 'react'
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import "./Logement.scss";
-import Carousel from '../../components/carousel/Carousel';
+import Carousel from "../../components/carousel/Carousel";
 import Collapse from "../../components/collapse/Collapse";
 import Rating from "../../components/rating/Rating";
+import logements from "../../../data/data.json";
 
 const Logement = () => {
-  const location = useLocation();
-  const { item } = location.state;
-  return (
-    <main className='container'>
+  const { id } = useParams();
+  const [item, setItem] = useState(null);
+  const [loading, setLoading] = useState(true);
+  
+  const navigate = useNavigate();
+  useEffect(() => {
+    const activeLogement = logements.find((logement) => logement.id === id);
+    if (activeLogement) {
+      setItem(activeLogement);
+      setLoading(false);
+    } else {
+      navigate("/error-404");
+    }
+  }, []);
+  
+  return loading ? (
+    <div>Loading...</div>
+  ) : (
+    <main className="container">
       <Carousel logement={item} />
       <div className="logementInfoContainer">
         <div>
@@ -17,7 +33,9 @@ const Logement = () => {
           <p className="logementLocation">{item.location}</p>
           <div className="tagsContainer">
             {item.tags.map((tag) => (
-              <div key={tag} className="tag">{tag}</div>
+              <div key={tag} className="tag">
+                {tag}
+              </div>
             ))}
           </div>
         </div>
@@ -41,14 +59,11 @@ const Logement = () => {
           />
         </div>
         <div className="logementCollapse">
-          <Collapse
-            item={{ title: "Équipements", content: item.equipments }}
-          />
+          <Collapse item={{ title: "Équipements", content: item.equipments }} />
         </div>
       </div>
-
     </main>
-  )
-}
+  );
+};
 
-export default Logement
+export default Logement;

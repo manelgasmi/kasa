@@ -7,7 +7,7 @@ import bgImage from '../../assets/bg1.png';
 const Home = () => {
 
   return (
-    <div>
+    <main className="container">
       <Banner title = "Chez vous, partout et ailleurs" bgImage={bgImage}/>
       
       <section className='logements'>
@@ -15,7 +15,7 @@ const Home = () => {
                 <Card key={logement.id} item={logement} /> // Rendering Card for each item
             ))}
       </section>
-      </div>
+    </main>
   )
 }
 
