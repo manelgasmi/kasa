@@ -1,34 +1,41 @@
 // Styles pour la page 404
 .error-page {
-    text-align: center;
-    background-color: #f8f8f8;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: Montserrat;
-  
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+
+  h1 {
+    font-size: 288px;
+    color: #ff4a4a;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 36px;
+    color: #ff6060;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .error-page {
+    justify-content: space-between;
     h1 {
-      font-size: 288px;
-      color: #ff4a4a;
-      margin-bottom: 10px;
-    }
-  
-    p {
-      font-size: 36px;
-      color: #FF6060;
-      margin-bottom: 20px;
-      font-weight: 500;
-    }
-  
-    .back-home {
-      display: inline-block;
-      padding: 10px 20px;
-      color: black;
-      text-decoration: underline;
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 99px;
     }
   }
-  
+}

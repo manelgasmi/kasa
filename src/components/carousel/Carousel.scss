@@ -1,37 +1,50 @@
 .carouselImageContainer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .carouselImage {
-    width: 100%;
-    height: 415px;
-    border-radius: 25px;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .carouselCounter {
-    position: absolute;
-    z-index: 10;
-    bottom: 20px;
-    color: white;
-  }
-  
-  .carouselNextButton {
-    position: absolute;
-    z-index: 10;
-    right: 20px;
-    color: white;
-    font-size: 100px;
-  }
-  
-  .carouselPreviousButton {
-    position: absolute;
-    z-index: 10;
-    left: 20px;
-    color: white;
-    font-size: 100px;
-  }
-  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carouselImage {
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carouselCounter {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  color: white;
+}
+
+.carouselNextButton {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  color: white;
+  font-size: 100px;
+}
+
+.carouselPreviousButton {
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  color: white;
+  font-size: 100px;
+}
+
+@media (max-width: 768px) {
+    .carouselNextButton {
+      font-size: 40px;
+    }
+    
+    .carouselPreviousButton {
+      font-size: 40px;
+    }
+    .carouselImage {
+      height: 255px;
+      border-radius: 10px;
+    }
+}

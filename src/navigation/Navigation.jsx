@@ -10,7 +10,6 @@ const Navigation = () => {
   return (
     <BrowserRouter>
     <Header/>
-     <main className='container'>
       <Routes>
         <Route path="/about-us" element={<AboutUS/>} />
         <Route path="/logement/:id" element={<Logement/>} />
@@ -19,7 +18,6 @@ const Navigation = () => {
         <Route path="/*" element={<Navigate replace to ="/error-404"/>} />
         
       </Routes>
-      </main>
     </BrowserRouter>
   );
 };

@@ -39,7 +39,7 @@ const Logement = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div className="ratingHostcontainer">
           <div className="logementHostContainer">
             <div className="logementHostName">
               <div>{item.host.name.split(" ")[0]}</div>

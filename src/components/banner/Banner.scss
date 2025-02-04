@@ -1,0 +1,47 @@
+.hero {
+  overflow: hidden;
+  height: 223px;
+  border-radius: 25px;
+}
+
+.bg-hero-1 {
+  background-size: cover;
+  background-position: center;
+
+  .banner-hover {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-hover-home {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .banner-hover-about {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 48px;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 110px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .bg-hero-1 {
+    .banner-hover {
+      min-height: 110px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 30px;
+    }
+  }
+}
