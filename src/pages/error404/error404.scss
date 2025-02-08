@@ -1,4 +1,6 @@
-// Styles pour la page 404
+@import "../../styles/variables";
+
+
 .error-page {
   text-align: center;
   height: 100vh;
@@ -10,13 +12,13 @@
 
   h1 {
     font-size: 288px;
-    color: #ff4a4a;
+    color: $color-error;
     margin-bottom: 10px;
   }
 
   p {
     font-size: 36px;
-    color: #ff6060;
+    color: $color-primary;
     margin-bottom: 20px;
     font-weight: 500;
   }
@@ -24,13 +26,14 @@
   .back-home {
     display: inline-block;
     padding: 10px 20px;
-    color: black;
+    color: $color-text-black;
     text-decoration: underline;
     font-size: 18px;
     font-weight: 600;
   }
 }
 
+// Small screen 
 @media (max-width: 768px) {
   .error-page {
     justify-content: space-between;

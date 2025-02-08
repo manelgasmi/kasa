@@ -1,3 +1,6 @@
+
+@import "../../styles/variables";
+
 .carouselImageContainer {
   position: relative;
   display: flex;
@@ -16,14 +19,14 @@
   position: absolute;
   z-index: 10;
   bottom: 20px;
-  color: white;
+  color: $color-text-white;
 }
 
 .carouselNextButton {
   position: absolute;
   z-index: 10;
   right: 20px;
-  color: white;
+  color: $color-text-white;
   font-size: 100px;
 }
 
@@ -31,10 +34,11 @@
   position: absolute;
   z-index: 10;
   left: 20px;
-  color: white;
+  color: $color-text-white;
   font-size: 100px;
 }
 
+//small screen (mobile)
 @media (max-width: 768px) {
     .carouselNextButton {
       font-size: 40px;

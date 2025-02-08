@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .header {
   max-width: 1240px;
   margin: 50px auto;
@@ -15,7 +17,7 @@
 
 .navigation a {
   text-decoration: none;
-  color: #000000;
+  color: $color-text-black;
   font-size: 24px;
   font-weight: 500;
 

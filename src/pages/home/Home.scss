@@ -1,11 +1,13 @@
+@import "../../styles/variables";
+
 .logements {
-    background-color: #F6F6F6;
+    box-sizing: border-box;
+    background-color: $color-background-light;
     padding: 50px;
     border-radius: 25px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 @media (max-width: 768px) {

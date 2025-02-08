@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 import "./collapse.scss";
 
 const Collapse = ({ item }) => {
@@ -27,5 +28,10 @@ const Collapse = ({ item }) => {
     </div>
   );
 };
+
+
+
+
+
 
 export default Collapse;

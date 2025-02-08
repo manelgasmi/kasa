@@ -1,3 +1,6 @@
+
+@import "../../styles/variables";
+
 .logementCollapseContainer {
   display: flex;
   justify-content: space-between;
@@ -11,7 +14,7 @@
 
 .logementTitle {
   font-size: 36px;
-  color: #ff6060;
+  color: $color-primary;
   margin: 0;
   font-weight: normal;
 }
@@ -24,38 +27,45 @@
 
 .tagsContainer {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .tag {
-  background-color: #ff6060;
-  color: white;
+  background-color: $color-primary;
+  color: $color-text-white;
   padding: 3px 25px;
   border-radius: 10px;
   margin-right: 10px;
   font-size: 14px;
 }
 
-.logementHostContainer {
-  display: flex;
-  align-items: center;
-}
+.logement_Host {
+  &--Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
-.logementHostName {
-  color: #ff6060;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 10px;
-  font-size: 18px;
-}
+  &--Name {
+      color: $color-primary;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 10px;
+      font-size: 18px;
+      text-align: right;
+    }
 
-.logementHostPicture {
-  height: 64px;
-  width: 64px;
-  border-radius: 50px;
-  object-fit: cover;
-  object-position: center;
-}
+  &--Picture {
+      height: 64px;
+      width: 64px;
+      border-radius: 50px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
 
 .logementCollapse {
   width: 48%;

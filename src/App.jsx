@@ -1,6 +1,6 @@
-import { useState } from "react";
+//import { useState } from "react";
 import "./App.scss";
-import Navigation from "./navigation/navigation";
+import Navigation from "./navigation/Navigation";
 
 import Footer from "./components/footer/Footer"; 
 

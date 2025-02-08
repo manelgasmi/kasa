@@ -1,4 +1,4 @@
-import React from 'react'
+
 import logements from '../../../data/data.json'
 import './Home.scss';
 import Card from '../../components/card/Card';
@@ -12,7 +12,7 @@ const Home = () => {
       
       <section className='logements'>
             {logements.map((logement) => (
-                <Card key={logement.id} item={logement} /> // Rendering Card for each item
+                <Card key={logement.id} logement={logement} /> // Rendering Card for each logement
             ))}
       </section>
     </main>

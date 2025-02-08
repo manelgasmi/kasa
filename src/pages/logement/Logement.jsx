@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import "./Logement.scss";
 import Carousel from "../../components/carousel/Carousel";
 import Collapse from "../../components/collapse/Collapse";
 import Rating from "../../components/rating/Rating";
 import logements from "../../../data/data.json";
+import "./Logement.scss";
 
 const Logement = () => {
   const { id } = useParams();
@@ -20,7 +20,7 @@ const Logement = () => {
     } else {
       navigate("/error-404");
     }
-  }, []);
+  }, [id, navigate, logements]);
   
   return loading ? (
     <div>Loading...</div>
@@ -40,12 +40,12 @@ const Logement = () => {
           </div>
         </div>
         <div className="ratingHostcontainer">
-          <div className="logementHostContainer">
-            <div className="logementHostName">
+          <div className="logement_Host--Container">
+            <div className="logement_Host--Name">
               <div>{item.host.name.split(" ")[0]}</div>
               <div>{item.host.name.split(" ")[1]}</div>
             </div>
-            <img className="logementHostPicture" src={item.host.picture} />
+            <img className="logement_Host--Picture" src={item.host.picture} />
           </div>
           <div className="ratingContainer">
             <Rating rating={item.rating} />

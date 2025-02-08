@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Banner.scss';
 
 const Banner = ({title, bgImage}) => {
@@ -10,5 +10,7 @@ const Banner = ({title, bgImage}) => {
   </section>
   )
 }
+
+
 
 export default Banner
