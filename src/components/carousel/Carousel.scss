@@ -1,5 +1,4 @@
-
-@import "../../styles/variables";
+@import "../../styles/_variables";
 
 .carouselImageContainer {
   position: relative;
@@ -40,15 +39,23 @@
 
 //small screen (mobile)
 @media (max-width: 768px) {
-    .carouselNextButton {
-      font-size: 40px;
-    }
-    
-    .carouselPreviousButton {
-      font-size: 40px;
-    }
-    .carouselImage {
-      height: 255px;
-      border-radius: 10px;
-    }
+  .carouselNextButton {
+    font-size: 40px;
+  }
+
+  .carouselPreviousButton {
+    font-size: 40px;
+  }
+  .carouselImage {
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 24px;
+  }
+  .carouselCounter{
+    display: none;
+  }
 }

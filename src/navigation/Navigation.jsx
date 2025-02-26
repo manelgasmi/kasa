@@ -9,14 +9,13 @@ import Header from "../components/header/Header";
 const Navigation = () => {
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
-        <Route path="/about-us" element={<AboutUS/>} />
-        <Route path="/logement/:id" element={<Logement/>} />
+        <Route path="/about-us" element={<AboutUS />} />
+        <Route path="/logement/:id" element={<Logement />} />
         <Route path="/" element={<Home />} />
-        <Route path="/error-404" element= {<Error404 />}/>
-        <Route path="/*" element={<Navigate replace to ="/error-404"/>} />
-        
+        <Route path="/error-404" element={<Error404 />} />
+        <Route path="/*" element={<Navigate replace to="/error-404" />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,13 +1,21 @@
-@import '/src/styles/_variables.scss';
+@import '/src/styles/_variables';
 
 .fullStar {
   color: $color-primary;  
   margin: 0 5px;
   font-size: 24px;
+  @media (max-width: 768px)  {
+  font-size: 14px;
+  }
 }
 
 .emptyStar {
   color: $color-secondary; 
   margin: 0 5px;
   font-size: 24px;
+  @media (max-width: 768px)  {
+    font-size: 14px;
+    }  
 }
+
+

@@ -15,11 +15,16 @@
   gap: 15px;
 }
 
+.linkHover {
+  text-decoration: underline !important;
+}
+
 .navigation a {
   text-decoration: none;
   color: $color-text-black;
   font-size: 24px;
   font-weight: 500;
+
 
   &:hover {
     text-decoration: underline;

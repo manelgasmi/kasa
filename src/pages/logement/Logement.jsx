@@ -20,7 +20,7 @@ const Logement = () => {
     } else {
       navigate("/error-404");
     }
-  }, [id, navigate, logements]);
+  }, [id, navigate]);
   
   return loading ? (
     <div>Loading...</div>
