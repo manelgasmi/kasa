@@ -7,7 +7,9 @@ import logements from "../../../data/data.json";
 import "./Logement.scss";
 
 const Logement = () => {
+  // get the id of logement from url
   const { id } = useParams();
+
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
   
@@ -18,6 +20,7 @@ const Logement = () => {
       setItem(activeLogement);
       setLoading(false);
     } else {
+      // handle the case when logement is not found in data
       navigate("/error-404");
     }
   }, [id, navigate]);

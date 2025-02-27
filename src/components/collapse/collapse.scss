@@ -1,12 +1,12 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .collapseContent {
   margin-top: 30px;
-  color: $color-text-white;
+  color: variables.$color-text-white;
 }
 
 .collapse {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
   border-radius: 5px;
   padding: 10px 20px 10px 15px;
   display: flex;
@@ -17,22 +17,23 @@
 .textClose {
   height: 0;
   overflow: hidden;
-  color: $color-text-black;
+  color: variables.$color-text-black;
   transition: 0.5s;
   text-align: start;
-  background-color: $color-light-gray;
+  background-color: variables.$color-light-gray;
   margin: 0;
   padding: 0 10px;
   box-sizing: border-box;
 }
 
 .textOpen {
-  color: $color-text-black;
+  color: variables.$color-text-black;
   transition: 0.5s;
   text-align: start;
-  background-color: $color-transparent-light;
+  background-color: variables.$color-transparent-light;
   margin: 0;
   padding: 10px;
+  border-radius: 0 0 5px 5px;
 }
 
 .rotateBottom {

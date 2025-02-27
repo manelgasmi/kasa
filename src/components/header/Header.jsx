@@ -3,12 +3,13 @@ import './Header.scss';
 
 const Header = () => {
     const {pathname}= useLocation()
-    console.log(pathname);
     
     return (
         <header className="header">
             <div className="logo">
+            <Link to = "/">
                 <img src="/src/assets/logo.png" />
+            </Link>
             </div>
             <nav className="navigation">
                 <ul>

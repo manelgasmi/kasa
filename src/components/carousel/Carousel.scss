@@ -1,4 +1,4 @@
-@import "../../styles/_variables";
+@use '../../styles/variables';
 
 .carouselImageContainer {
   position: relative;
@@ -18,14 +18,14 @@
   position: absolute;
   z-index: 10;
   bottom: 20px;
-  color: $color-text-white;
+  color: variables.$color-text-white;
 }
 
 .carouselNextButton {
   position: absolute;
   z-index: 10;
   right: 20px;
-  color: $color-text-white;
+  color: variables.$color-text-white;
   font-size: 100px;
 }
 
@@ -33,7 +33,7 @@
   position: absolute;
   z-index: 10;
   left: 20px;
-  color: $color-text-white;
+  color: variables.$color-text-white;
   font-size: 100px;
 }
 

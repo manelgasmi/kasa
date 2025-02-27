@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use '../../styles/variables';
 
 .header {
   max-width: 1240px;
@@ -12,7 +12,7 @@
 .navigation ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 57px;
 }
 
 .linkHover {
@@ -21,7 +21,7 @@
 
 .navigation a {
   text-decoration: none;
-  color: $color-text-black;
+  color: variables.$color-text-black;
   font-size: 24px;
   font-weight: 500;
 
@@ -46,6 +46,10 @@
 
     .navigation a {
       font-size: 12px;
+      text-transform: uppercase;
+    }
+    .navigation ul {
+      gap: 15px;
     }
   }
 

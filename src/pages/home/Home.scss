@@ -1,9 +1,9 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 .logements {
   box-sizing: border-box;
-  background-color: $color-background-light;
-  padding: 50px;
+  background-color: variables.$color-background-light;
+  padding: 40px;
   border-radius: 25px;
   margin-top: 50px;
   display: flex;

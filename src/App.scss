@@ -1,9 +1,10 @@
 
-@import '/src/styles/variables';
+@use '/src/styles/variables';
 
 .container {
   max-width: 1240px;
   margin: 0 auto;
+  min-height: 67vh;
 }
 
 @media (max-width: 768px){

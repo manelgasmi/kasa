@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@use "../../styles/variables";
 
 
 .error-page {
@@ -12,13 +12,13 @@
 
   h1 {
     font-size: 288px;
-    color: $color-error;
+    color: variables.$color-error;
     margin-bottom: 10px;
   }
 
   p {
     font-size: 36px;
-    color: $color-primary;
+    color: variables.$color-primary;
     margin-bottom: 20px;
     font-weight: 500;
   }
@@ -26,7 +26,7 @@
   .back-home {
     display: inline-block;
     padding: 10px 20px;
-    color: $color-text-black;
+    color: variables.$color-text-black;
     text-decoration: underline;
     font-size: 18px;
     font-weight: 600;

@@ -1,0 +1,12 @@
+.collapseContainer {
+  width: 80%;
+  margin: 30px auto;
+}
+
+
+//small screen (mobile)
+@media (max-width: 768px) {
+    .collapseContainer {
+      width: 100%;
+    }
+  }
